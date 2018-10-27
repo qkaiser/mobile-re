@@ -30,7 +30,7 @@ Java.perform(function () {
 
     CordovaBridge.jsExec.implementation = function (paramInt, paramString1, paramString2, paramString3, paramString4) {
         send(paramString1 + " : " + paramString2 + " : " + paramString3 + " : " + paramString4);
-       	this.jsExec(paramInt, paramString1, paramString2, paramString3, paramString4);
+        return this.jsExec(paramInt, paramString1, paramString2, paramString3, paramString4);
     };
 
 });
